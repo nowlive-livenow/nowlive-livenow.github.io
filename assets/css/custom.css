@@ -73,6 +73,20 @@ p, a { font-family: "Courier New", Courier, monospace; color: #FFF; text-align: 
 .main .archive .articles .feedburnerFeedBlock ul li:hover {background: #555;}
 .main .archive .articles .feedburnerFeedBlock ul li:hover * {color: #FFF;}
 
+.main .gallery {background: #f2f2f2; padding: 100px 0;}
+.main .gallery .heading {max-width: 100%; margin: 0 auto 70px; border: solid 2px #555; padding: 20px 0 20px; overflow: auto; line-height: 46px; height: 95px; max-width: 350px;}
+.main .gallery .heading .header {font-family: 'Open Sans Condensed', sans-serif; color: #555; font-weight: 300; font-size: 46px; letter-spacing: 12px; text-align: center; padding: 0; max-width: 100%;}
+.main .gallery .heading p {overflow: hidden; width: 120%; margin-left: -10%; margin-top: -105px; max-width: 100%;}
+.main .gallery .heading p span {display: inline-block; width: 50%; color: #555; font-size: 24px; float: left;}
+.main .gallery .heading p span:nth-child(1) {text-align: left;}
+.main .gallery .heading p span:nth-child(2) {text-align: right;}
+.main .gallery .art {max-width: 80%; margin: 0 auto; min-height: 350px;}
+.main .gallery .art .item {height: 100%; min-height: 350px;}
+.main .gallery .art .item .card {background: #FFF; padding: 10px; box-shadow: 10px 10px 13px -6px rgba(0,0,0,0.75);}
+.main .gallery .art .item .card .img-container {min-height: 300px; position: relative; overflow: hidden;}
+.main .gallery .art .item .card .img-container img {position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); height: 100%; max-width: initial;}
+.main .gallery:hover .heading .header {letter-spacing: 16px;}
+
 footer {background: #282828;}
 footer img {max-width: 100px; padding: 50px 0;}
 footer .social {width: 100%; background: #222222; padding: 40px 0;}
@@ -89,6 +103,8 @@ footer .social .control a:nth-child(2) {text-align: right;}
 
 .slick-prev {position: absolute; top: 100px; left: -50px; cursor: pointer;}
 .slick-next {position: absolute; top: 100px; right: -50px; cursor: pointer;}
+.slick-slide {margin: 0 15px;}
+.slick-track {overflow: visible;}
 
 @media screen and (max-width: 1080px) {
 	.main .archive .articles .feedburnerFeedBlock ul li .headline {font-size: 32px;}

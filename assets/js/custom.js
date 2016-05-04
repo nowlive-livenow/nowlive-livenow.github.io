@@ -41,8 +41,9 @@ $(document).ready(function() {
 		slidesToScroll: 1,
 		infinite: true,
 		draggable: true,
-		prevArrow: '<img src="assets/img/chevron-left.png" class="slick-prev" />',
-		nextArrow: '<img src="assets/img/chevron-right.png" class="slick-next" />'
+		arrows: false
+		// prevArrow: '<img src="assets/img/chevron-left.png" class="slick-prev" />',
+		// nextArrow: '<img src="assets/img/chevron-right.png" class="slick-next" />'
 	});
 
 });
