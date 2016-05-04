@@ -2,6 +2,7 @@
 $(document).ready(function() {
 
 	smoothScroll.init();
+	var s = skrollr.init({forceHeight: false});
 	
 	$('a.home').hover(function() {
 		$('.line').css('margin-left', '0px');
@@ -45,6 +46,13 @@ $(document).ready(function() {
 		// prevArrow: '<img src="assets/img/chevron-left.png" class="slick-prev" />',
 		// nextArrow: '<img src="assets/img/chevron-right.png" class="slick-next" />'
 	});
+
+	setTimeout(function(){
+		$('.logo *').animate({'opacity': 1}, 1000)
+	}, 200);
+	setTimeout(function(){
+		$('.copy p').animate({'opacity': 1}, 1000)
+	}, 1000);
 
 });
 

@@ -33,11 +33,12 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/custom.css">
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-	<script type="text/javascript" src="assets/js/custom.js"></script>
 	<script type="text/javascript" src="assets/js/jquery.countdown.js"></script>
 	<script type="text/javascript" src="assets/vendor/slick/slick.min.js"></script>
 	<script type="text/javascript" src="assets/js/smooth-scroll.min.js"></script>
 	<script type="text/javascript" src="assets/js/skrollr.min.js"></script>
+	<script type="text/javascript" src="assets/js/custom.js"></script>
+
 </head>
 <body>
 	<nav class="nav">
@@ -92,28 +93,28 @@
 			</div>
 		</section>
 		<section class="countdown" id="countdown">
-			<div class="clock"></div>
-			<div class="label">
+			<div class="clock" data-0="opacity: 0; left: -100%;" data-500="left: 0; opacity: 1;"></div>
+			<div class="label" data-0="opacity: 0" data-500="opacity: 1;">
 				<span>weeks</span>
 				<span>&nbsp;days</span>
 				<span>&nbsp;hours</span>
 				<span>&nbsp;&nbsp;minutes</span>
 				<span>&nbsp;&nbsp;seconds</span>
 			</div>
-			<p>NEXT LIVE</p>
+			<p data-0="opacity: 0" data-600="opacity: 1;">NEXT LIVE</p>
 		</section>
 <!-- 		<section class="nowlive">
 			<script src="http://feeds.feedburner.com/wordpress/TOqy?format=sigpro" type="text/javascript" ></script>
 		</section> -->
 		<section class="archive" id="archive">
-			<div class="heading">
+			<div class="heading" data-0="opacity: 0;" data-1300="opacity: 1;">
 				<h1 class="header">ARCHIVES</h1>
 				<p>
 					<span>>></span>
 					<span><<</span>
 				</p>
 			</div>
-			<div class="articles">
+			<div class="articles" data-0="right: -100%; opacity: 0;" data-900="right: 0; opacity: 1;">
 				<script src="http://feeds.feedburner.com/wordpress/dAvER?format=sigpro" type="text/javascript"></script>
 			</div>
 		</section>
@@ -125,7 +126,7 @@
 					<span><<</span>
 				</p>
 			</div>
-			<div class="art">
+			<div class="art" data-0="left: -100%; opacity: 0;" data-1700="left: 0; opacity: 1;">
 				<div class="item">
 					<div class="card">
 						<div class="img-container">
